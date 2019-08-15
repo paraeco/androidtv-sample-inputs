@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion '23.0.3'
 
     defaultConfig {
         applicationId "com.example.android.sampletvinput"
@@ -21,9 +20,9 @@ android {
 }
 
 dependencies {
-    compile project(':library')
-    compile 'com.android.support:recyclerview-v7:24.0.0'
-    compile 'com.android.support:leanback-v17:24.0.0'
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.google.android.exoplayer:exoplayer:r1.5.14'
+    implementation project(':library')
+    implementation 'com.android.support:recyclerview-v7:24.0.0'
+    implementation 'com.android.support:leanback-v17:24.0.0'
+    implementation 'com.android.support:appcompat-v7:24.0.0'
+    implementation 'com.google.android.exoplayer:exoplayer:r1.5.14'
 }
